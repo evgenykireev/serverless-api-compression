@@ -1,0 +1,20 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "plugins": [
+    "mocha"
+  ],
+  "rules": {
+    "indent": [
+      2,
+      "tab"
+    ],
+    "max-len": ["error", 120, { "ignoreStrings": true, "ignoreComments": true, "ignoreTemplateLiterals": true }],
+    "no-tabs": 0,
+    "no-console": 0,
+    "no-prototype-builtins": 0,
+    "mocha/no-exclusive-tests": "error"
+  }
+}

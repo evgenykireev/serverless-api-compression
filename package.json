@@ -1,0 +1,23 @@
+{
+  "name": "Serverless-API-Compression",
+  "version": "1.0.0",
+  "description": "Serverless plugin that enables/disables content compression setting in API Gateway",
+  "main": "index.js",
+  "repository": "https://github.com/evgenykireev/serverless-api-compression",
+  "author": "Eugene Kireev",
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint --env node ./",
+    "lint:fix": "./node_modules/.bin/eslint --env node ./ --fix"
+  },
+  "engines": {
+    "node": ">=6.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-mocha": "^4.12.1"
+  }
+}
