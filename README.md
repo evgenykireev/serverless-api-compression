@@ -9,17 +9,15 @@ is not optimal and causing "[Too Many requests](https://github.com/dong-dohai/se
 
 
 ## How to use
-1. Create `.serverless_plugins` directory if not exists:
- `mkdir .serverless_plugins`
-2. Clone this repo into it:
- `git clone https://github.com/evgenykireev/serverless-api-compression.git .serverless_plugins/`
-3. Add plugin to your `serverless.yml` config
+1. `npm install --save-dev serverless-api-compression`
+ 
+2. Add plugin to your `serverless.yml` config
  ```
  plugins:
     - serverless-api-compression
 ```
 
-4. Add `contentCompression` attribute to your `custom` section
+3. Add `contentCompression` attribute to your `custom` section
 ```
  custom:
   contentCompression: 1024

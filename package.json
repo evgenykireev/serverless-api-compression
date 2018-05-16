@@ -1,6 +1,6 @@
 {
-  "name": "Serverless-API-Compression",
-  "version": "1.0.0",
+  "name": "serverless-api-compression",
+  "version": "1.0.1",
   "description": "Serverless plugin that enables/disables content compression setting in API Gateway",
   "main": "index.js",
   "repository": "https://github.com/evgenykireev/serverless-api-compression",
