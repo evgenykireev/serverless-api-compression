@@ -1,16 +1,21 @@
 # serverless-content-compression
 Serverless plugin that enables/disables content compression setting in API Gateway
 
-## Why 
-Currently Serverless Framework does not support `MinimumCompressionSize` settings.
- 
-Existing plugin [serverless-content-encoding](https://github.com/dong-dohai/serverless-content-encoding) implementation
-is not optimal and causing "[Too Many requests](https://github.com/dong-dohai/serverless-content-encoding/issues/2)" error.
+## Deprecated
+Serverless Framework now supports this functionality out of the box.
+Example:
+
+```
+provider:
+  name: aws
+  apiGateway:
+    minimumCompressionSize: 1024
+```
 
 
 ## How to use
 1. `npm install --save-dev serverless-api-compression`
- 
+
 2. Add plugin to your `serverless.yml` config
  ```
  plugins:
@@ -24,6 +29,5 @@ is not optimal and causing "[Too Many requests](https://github.com/dong-dohai/se
 
 ```
 
- `contentCompression` value is a MinimumCompressionSize in bytes. Use `0` to enable compression for all responses. 
+ `contentCompression` value is a MinimumCompressionSize in bytes. Use `0` to enable compression for all responses.
  Use `null` or `false` to disable it.
- 
